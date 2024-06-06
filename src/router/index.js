@@ -8,6 +8,21 @@ const router = createRouter({
       name: "home",
       component: () => import("../views/HomeView.vue"),
     },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import("../views/AboutView.vue"),
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () => import("../views/ContactView.vue"),
+    },
+    {
+      path: "/work",
+      name: "work",
+      component: () => import("../views/WorkView.vue"),
+    },
   ],
   scrollBehavior() {
     // always scroll to top

@@ -4,6 +4,7 @@ import CardContainer from './../components/CardContainer.vue';
 
 <template>
   <section>
+  
     <CardContainer />
   </section>
 </template>
