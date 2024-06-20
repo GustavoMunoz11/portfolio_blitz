@@ -11,15 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-primary:#024959;
+  --color-secondary:#3CA6A6;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*{
+  margin: 0px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 body {

@@ -1,11 +1,12 @@
 <script setup>
-import CardContainer from './../components/CardContainer.vue';
+import ComicBox from "../components/comics/ComicBox.vue";
+import ComicRow from "../components/comics/ComicRow.vue";
 </script>
 
 <template>
   <section>
-  
-    <CardContainer />
+    <ComicBox />
+    <ComicRow />
   </section>
 </template>
 
