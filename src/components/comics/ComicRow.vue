@@ -22,12 +22,17 @@ section {
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   padding: 1em;
-  gap: 1em;
 }
 
 .comic_container > div {
   background-color: white;
   border: 3px solid black;
-  padding-top: 71%;
+  padding-top: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .comic_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>
