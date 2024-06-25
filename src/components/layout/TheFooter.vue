@@ -10,7 +10,7 @@
 
 <style scoped>
 footer {
-    background-color: black;
+    background-color: var(--color-primary);
     display: flex;
     justify-content: space-around;
 }
