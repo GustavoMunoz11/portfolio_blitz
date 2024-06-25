@@ -4,7 +4,7 @@
 
 <template>
 <section>
-
+<h1>Fotomontajes</h1>
 </section>
 
 </template>
@@ -14,4 +14,10 @@
 section {
     background-color: var(--color-third);
 }
+
+h1 {
+    font-family: "Roboto", bold;
+    color: var(--color-primary);
+}
+
 </style>
