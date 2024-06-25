@@ -30,4 +30,10 @@ section {
   border: 3px solid black;
   padding-top: 71%;
 }
+
+@media screen and (max-width: 600px) {
+  .comic_container {
+  grid-template-columns: repeat(1, 1fr);
+}
+}
 </style>

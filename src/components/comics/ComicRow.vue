@@ -26,7 +26,7 @@ section {
 
 .comic_container > div {
   background-color: white;
-  border: 3px solid black;
+  border: 3px  solid black;
   padding-top: 100%;
 }
 
