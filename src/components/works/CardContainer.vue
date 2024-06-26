@@ -8,10 +8,7 @@ import TheCard from './TheCard.vue';
       <TheCard name="carlos" />
       <TheCard name="pepe" />
       <TheCard name="Fercho" />
-      <TheCard name="Juana" />
-      <TheCard name="Sofia" />
-      <TheCard name="Olga" />
-      <TheCard name="Maria" />
+
     </div>
   </section>
 </template>
@@ -19,10 +16,10 @@ import TheCard from './TheCard.vue';
 <style scoped>
 .card-container {
   display: grid;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   justify-items: center;
   align-content: center;

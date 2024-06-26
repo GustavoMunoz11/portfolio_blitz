@@ -1,10 +1,11 @@
 <script setup>
-
+import CardContainer from './CardContainer.vue';
 </script>
 
 <template>
 <section>
 <h1>Fotomontajes</h1>
+<CardContainer />
 </section>
 
 </template>
@@ -13,6 +14,7 @@
 
 section {
     background-color: var(--color-third);
+    padding: 30px;
 }
 
 h1 {

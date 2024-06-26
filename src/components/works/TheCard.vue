@@ -12,11 +12,12 @@ const props = defineProps({
 
 <style scoped>
 .card-mod {
-  width: 200px;
-  height: 100px;
-  background: pink;
+  width: 350px;
+  height: 450px;
+  background: white;
   align-content: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .name {
