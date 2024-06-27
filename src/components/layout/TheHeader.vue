@@ -22,7 +22,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
 }
 
 h1 {
@@ -39,5 +38,11 @@ h1 {
 p {
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    display: none;
+  }
 }
 </style>

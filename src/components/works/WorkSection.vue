@@ -1,26 +1,34 @@
 <script setup>
-import CardContainer from './CardContainer.vue';
+import CardContainer from "./CardContainer.vue";
+const props = defineProps({
+  sectionName: String,
+});
 </script>
 
 <template>
-<section>
-<h1>Fotomontajes</h1>
-<CardContainer />
-</section>
-
+  <section>
+    <h1 class="section_name">{{ props.sectionName }}</h1>
+    <CardContainer />
+  </section>
 </template>
 
 <style scoped>
-
 section {
-    background-color: var(--color-third);
-    padding: 13px;
+  background-color: var(--color-third);
+  padding: 13px;
 }
 
 h1 {
-    font-family: "Roboto", bold;
-    color: var(--color-primary);
-    text-align: left;
+  font-family: "Roboto", bold;
+  color: var(--color-primary);
+  text-align: left;
+  margin-left: 40px;
 }
 
+@media screen and (max-width: 900px) {
+  h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
 </style>

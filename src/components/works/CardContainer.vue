@@ -1,5 +1,5 @@
 <script setup>
-import TheCard from './TheCard.vue';
+import TheCard from "./TheCard.vue";
 </script>
 <template>
   <section>
@@ -8,21 +8,20 @@ import TheCard from './TheCard.vue';
       <TheCard name="carlos" />
       <TheCard name="pepe" />
       <TheCard name="Fercho" />
-
     </div>
   </section>
 </template>
 
 <style scoped>
 .card-container {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   border: 2px solid black;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+  gap: 1em;
+
   margin-top: 80px;
   margin-bottom: 170px;
 }

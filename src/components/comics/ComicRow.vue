@@ -26,13 +26,27 @@ section {
 
 .comic_container > div {
   background-color: white;
-  border: 3px  solid black;
+  border: 3px solid black;
+  border-right: none;
   padding-top: 100%;
+}
+
+.comic_container > div:last-child {
+  border-right: 3px solid black;
 }
 
 @media screen and (max-width: 600px) {
   .comic_container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .comic_container > div {
+    border-right: 3px solid black;
+    border-bottom: none;
+  }
+
+  .comic_container > div:last-child {
+    border-bottom: 3px solid black;
   }
 }
 </style>

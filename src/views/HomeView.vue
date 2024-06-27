@@ -7,8 +7,10 @@ import ComicRow from "../components/comics/ComicRow.vue";
 <template>
   <section>
     <ComicBox />
-    <WorkSection />
+    <WorkSection sectionName="Fotomontajes" />
     <ComicRow />
+    <WorkSection sectionName="Ilustración" />
+    <WorkSection sectionName="Marcas" />
   </section>
 </template>
 

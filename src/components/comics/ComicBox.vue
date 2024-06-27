@@ -33,7 +33,7 @@ section {
 
 @media screen and (max-width: 600px) {
   .comic_container {
-  grid-template-columns: repeat(1, 1fr);
-}
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>
