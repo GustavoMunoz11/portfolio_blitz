@@ -23,6 +23,7 @@ import TheCard from './TheCard.vue';
   justify-content: center;
   justify-items: center;
   align-content: center;
-  gap: 1rem;
+  margin-top: 80px;
+  margin-bottom: 170px;
 }
 </style>

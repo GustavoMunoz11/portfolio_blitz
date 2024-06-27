@@ -14,12 +14,13 @@ import CardContainer from './CardContainer.vue';
 
 section {
     background-color: var(--color-third);
-    padding: 30px;
+    padding: 13px;
 }
 
 h1 {
     font-family: "Roboto", bold;
     color: var(--color-primary);
+    text-align: left;
 }
 
 </style>
