@@ -2,6 +2,7 @@
 import ComicBox from "../components/comics/ComicBox.vue";
 import WorkSection from "../components/works/WorkSection.vue";
 import ComicRow from "../components/comics/ComicRow.vue";
+import Contact from "../components/Contact.vue";
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import ComicRow from "../components/comics/ComicRow.vue";
     <ComicRow />
     <WorkSection sectionName="Ilustración" />
     <WorkSection sectionName="Marcas" />
+    <ComicBox />
+    <Contact sectionName="Contacto" />
   </section>
 </template>
 
