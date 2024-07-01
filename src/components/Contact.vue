@@ -1,17 +1,18 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <section>
     <h1>Contacto</h1>
-    <div class="contact_container">
+    <div id="contact_container">
       <form action="">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" />
 
-        <label for="email">email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" />
 
-        <label for="message">mensaje</label>
+        <label for="message">Mensaje</label>
         <textarea name="message" id="message"></textarea>
 
         <button type="submit">Enviar</button>
@@ -31,7 +32,40 @@ section {
 h1 {
   font-family: "Roboto", bold;
   color: var(--color-primary);
-  text-align: left;
-  margin-left: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+
+input {
+  background-color: white;
+  border-radius: 30px;
+  width: 500px;
+  height: 40px;
+}
+
+textarea {
+  background-color: white;
+  border-radius: 30px;
+  border-color: none;
+  width: 500px;
+  height: 300px;
+}
+
+
+button {
+  background-color: var(--color-secondary);
+}
+
 </style>
