@@ -1,11 +1,14 @@
 <script setup>
+function handleSubmit(params) {
+  console.log("hola")
+}
 </script>
 
 <template>
   <section>
     <h1>Contacto</h1>
     <div id="contact_container">
-      <form action="">
+      <form @submit.prevent="handleSubmit">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" />
 
