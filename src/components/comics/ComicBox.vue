@@ -7,10 +7,10 @@ const props = defineProps({
 <template>
   <section>
     <div class="comic_container">
-      <div><img :src="`/img/${props.images ? props.images[0]: ''}`" alt=""></div>
-      <div><img :src="`/img/${props.images ? props.images[1]: ''}`" alt=""></div>
-      <div><img :src="`/img/${props.images ? props.images[2]: ''}`" alt=""></div>
-      <div><img :src="`/img/${props.images ? props.images[3]: ''}`" alt=""></div>
+      <div><img :src="`img/${props.images ? props.images[0]: ''}`" alt=""></div>
+      <div><img :src="`img/${props.images ? props.images[1]: ''}`" alt=""></div>
+      <div><img :src="`img/${props.images ? props.images[2]: ''}`" alt=""></div>
+      <div><img :src="`img/${props.images ? props.images[3]: ''}`" alt=""></div>
     </div>
   </section>
 </template>
