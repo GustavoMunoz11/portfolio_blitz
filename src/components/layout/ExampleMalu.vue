@@ -152,7 +152,7 @@ header {
   }
 
   .hamburger {
-    display: inline-block;
+    display: flex;
   }
 }
 </style>
