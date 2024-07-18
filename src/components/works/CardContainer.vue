@@ -1,13 +1,14 @@
 <script setup>
 import TheCard from "./TheCard.vue";
+const props = defineProps({
+  proyects: Array,
+});
 </script>
 <template>
   <section>
     <div class="card-container">
-      <TheCard name="luis" />
-      <TheCard name="carlos" />
-      <TheCard name="pepe" />
-      <TheCard name="Fercho" />
+      <TheCard  v-for="p in proyects" :proyect="p" :key="p.id" />
+ 
     </div>
   </section>
 </template>

@@ -1,15 +1,16 @@
 <script setup>
 const props = defineProps({
   name: String,
+  proyect: Object
 });
 </script>
 
 <template>
   <div class="card-mod">
     <div id="img_container">
-      <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-e33a2.appspot.com/o/fotomontajes%2Fchoco%20com.png?alt=media&token=70ad2cba-d02a-4a1a-9e86-5ffc5ceea74f" alt="">
+      <img :src="proyect.img_url" alt="">
     </div>
-    <h3 class="name">{{ props.name }}</h3>
+    <h3 class="name">{{ props.title }}</h3>
   </div>
 </template>
 

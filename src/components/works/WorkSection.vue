@@ -2,13 +2,14 @@
 import CardContainer from "./CardContainer.vue";
 const props = defineProps({
   sectionName: String,
+  proyects: Array,
 });
 </script>
 
 <template>
   <section>
     <h1 class="section_name">{{ props.sectionName }}</h1>
-    <CardContainer />
+    <CardContainer :proyects="proyects"/>
   </section>
 </template>
 
