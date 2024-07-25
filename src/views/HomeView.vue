@@ -25,11 +25,12 @@ onMounted(() => {
 <template>
   <section>
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
-    <WorkSection sectionName="Fotomontajes" :proyects="proyects" />
+    <WorkSection sectionName="Fotomontajes" />
     <ComicRow :images="['c4c1.png', 'c4c2.png', 'c4c3.png', 'c4c4.png']" />
-    <WorkSection sectionName="Ilustración" />
-    <WorkSection sectionName="Marcas" />
+    <WorkSection sectionName="Ilustración" :proyects="proyects.filter((e) => e.category_code == 'ilu')"/>
+    <WorkSection sectionName="Marcas" :proyects="proyects.filter((e) => e.category_code == 'mar')" />
     <ComicBox />
+    <WorkSection sectionName="Fotografía" :proyects="proyects.filter((e) => e.category_code == 'fot')" />
     <Contact sectionName="Contacto" />
   </section>
 </template>

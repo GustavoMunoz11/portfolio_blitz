@@ -10,7 +10,8 @@ const props = defineProps({
     <div id="img_container">
       <img :src="proyect.img_url" alt="">
     </div>
-    <h3 class="name">{{ props.title }}</h3>
+    <h3 class="name">{{ proyect.name }}</h3>
+    
   </div>
 </template>
 
@@ -35,6 +36,7 @@ const props = defineProps({
 
 .name {
   margin-top: 15px;
+  color: var(--color-fourth);
 }
 
 img {
