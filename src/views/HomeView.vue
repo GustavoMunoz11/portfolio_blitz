@@ -3,6 +3,7 @@ import ComicBox from "../components/comics/ComicBox.vue";
 import WorkSection from "../components/works/WorkSection.vue";
 import ComicRow from "../components/comics/ComicRow.vue";
 import Contact from "../components/Contact.vue";
+import About from "../components/works/About.vue";
 
 import { ref, onMounted } from "vue";
 
@@ -31,6 +32,11 @@ onMounted(() => {
     <WorkSection sectionName="Marcas" :proyects="proyects.filter((e) => e.category_code == 'mar')" />
     <ComicBox :images="['c8c1.png', 'c8c2.png', 'c8c3.png', 'c8c4.png']" />
     <WorkSection sectionName="Fotografía" :proyects="proyects.filter((e) => e.category_code == 'fot')" />
+      <ComicBox />
+      <About />
+      <ComicBox />
+      <WorkSection sectionName="Web" :proyects="proyects.filter((e) => e.category_code == 'web')" />
+        <ComicBox />
     <Contact sectionName="Contacto" />
   </section>
 </template>
