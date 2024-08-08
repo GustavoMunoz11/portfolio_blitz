@@ -27,16 +27,24 @@ onMounted(() => {
   <section>
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
     <WorkSection sectionName="Fotomontajes" :proyects="proyects.filter((e) => e.category_code == 'ftm')"/>
-    <ComicRow :images="['c4c1.png', 'c4c2.png', 'c4c3.png', 'c4c4.png']" />
-    <WorkSection sectionName="Ilustración" :proyects="proyects.filter((e) => e.category_code == 'ilu')"/>
-    <WorkSection sectionName="Marcas" :proyects="proyects.filter((e) => e.category_code == 'mar')" />
-    <ComicBox :images="['c8c1.png', 'c8c2.png', 'c8c3.png', 'c8c4.png']" />
-    <WorkSection sectionName="Fotografía" :proyects="proyects.filter((e) => e.category_code == 'fot')" />
       <ComicBox />
+      <WorkSection sectionName="Ilustración" :proyects="proyects.filter((e) => e.category_code == 'ilu')"/>
+        <WorkSection sectionName="Marcas" :proyects="proyects.filter((e) => e.category_code == 'mar')" />
+        <ComicRow />
+        <WorkSection sectionName="Web" :proyects="proyects.filter((e) => e.category_code == 'web')" />
+    <ComicRow :images="['c4c1.png', 'c4c2.png', 'c4c3.png', 'c4c4.png']" />
+    <WorkSection sectionName="Animación 2D Y 3D" :proyects="proyects.filter((e) => e.category_code == 'ani')"/>
+      <ComicBox />
+      <WorkSection sectionName="Editorial" :proyects="proyects.filter((e) => e.category_code == 'edi')" />
+        <ComicBox />
+        <WorkSection sectionName="Doblaje y Edición de sonido" :proyects="proyects.filter((e) => e.category_code == 'dob')" />
+    <ComicBox :images="['c8c1.png', 'c8c2.png', 'c8c3.png', 'c8c4.png']" />
+    <WorkSection />
+      <ComicBox />
+      <WorkSection sectionName="Fotografía" :proyects="proyects.filter((e) => e.category_code == 'fot')" />
+        <ComicBox />
       <About />
       <ComicBox />
-      <WorkSection sectionName="Web" :proyects="proyects.filter((e) => e.category_code == 'web')" />
-        <ComicBox />
     <Contact sectionName="Contacto" />
   </section>
 </template>
