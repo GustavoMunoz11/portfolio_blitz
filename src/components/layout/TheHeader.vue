@@ -12,7 +12,7 @@ function toggleMenu() {
 
 <template>
   <header>
-    <h1>portafolio</h1>
+    <h1>Gustavo Muñoz</h1>
 
     <div class="buttons">
       <p @click="router.push({ name: 'trabajos' })">Trabajos</p>
