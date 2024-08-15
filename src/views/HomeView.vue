@@ -12,7 +12,7 @@ import Papa from "papaparse";
 const database =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTN8ukBftP2YebAXpsXppXCpoMHRZGJvNIOLicVIakL4-m3YIaMhZgDfe54dBgEIE4PprIb7i-Ld6Bo/pub?output=csv";
 
-const proyects = ref([])
+const proyects = ref([]);
 
 onMounted(() => {
   Papa.parse(database, {
@@ -26,31 +26,58 @@ onMounted(() => {
 <template>
   <section>
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
-    <WorkSection sectionName="Fotomontajes" :proyects="proyects.filter((e) => e.category_code == 'ftm')"/>
-      <ComicBox />
-      <WorkSection sectionName="Ilustración" :proyects="proyects.filter((e) => e.category_code == 'ilu')"/>
-        <WorkSection sectionName="Marcas" :proyects="proyects.filter((e) => e.category_code == 'mar')" />
-        <ComicRow />
-        <WorkSection sectionName="Web" :proyects="proyects.filter((e) => e.category_code == 'web')" />
+    <WorkSection
+      sectionName="Fotomontajes"
+      :proyects="proyects.filter((e) => e.category_code == 'ftm')"
+    />
+    <ComicBox :images="['c2c1.png', 'c2c2.png', 'c2c3.png', 'c2c4.png']" />
+    <WorkSection
+      sectionName="Ilustración"
+      :proyects="proyects.filter((e) => e.category_code == 'ilu')"
+    />
+    <WorkSection
+      sectionName="Marcas"
+      :proyects="proyects.filter((e) => e.category_code == 'mar')"
+    />
+    <ComicRow :images="['c3c1.png', 'c3c2.png', 'c3c3.png', 'c3c4.png']" />
+    <WorkSection
+      sectionName="Web"
+      :proyects="proyects.filter((e) => e.category_code == 'web')"
+    />
     <ComicRow :images="['c4c1.png', 'c4c2.png', 'c4c3.png', 'c4c4.png']" />
-    <WorkSection sectionName="Animación 2D Y 3D" :proyects="proyects.filter((e) => e.category_code == 'ani')"/>
-      <ComicBox />
-      <WorkSection sectionName="Editorial" :proyects="proyects.filter((e) => e.category_code == 'edi')" />
-        <ComicBox />
-        <WorkSection sectionName="Doblaje y Edición de sonido" :proyects="proyects.filter((e) => e.category_code == 'dob')" />
+    <WorkSection
+      sectionName="Animación 2D Y 3D"
+      :proyects="proyects.filter((e) => e.category_code == 'ani')"
+    />
+    <ComicBox />
+    <WorkSection
+      sectionName="Editorial"
+      :proyects="proyects.filter((e) => e.category_code == 'edi')"
+    />
+    <ComicBox />
+    <WorkSection
+      sectionName="Doblaje y Edición de sonido"
+      :proyects="proyects.filter((e) => e.category_code == 'dob')"
+    />
+    <ComicBox :images="['c7c1.png', 'c7c2.png', 'c7c3.png', 'c7c4.png']" />
+    <WorkSection
+      sectionName="Otros trabajos"
+      :proyects="proyects.filter((e) => e.category_code == 'otr')"
+    />
     <ComicBox :images="['c8c1.png', 'c8c2.png', 'c8c3.png', 'c8c4.png']" />
-    <WorkSection />
-      <ComicBox />
-      <WorkSection sectionName="Fotografía" :proyects="proyects.filter((e) => e.category_code == 'fot')" />
-        <ComicBox />
-      <About />
-      <ComicBox />
+    <WorkSection
+      sectionName="Fotografía"
+      :proyects="proyects.filter((e) => e.category_code == 'fot')"
+    />
+    <ComicBox />
+    <About />
+    <ComicBox />
     <Contact sectionName="Contacto" />
   </section>
 </template>
 
 <style scoped>
-section{
+section {
   color: #000;
 }
 </style>

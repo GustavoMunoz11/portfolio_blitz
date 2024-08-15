@@ -1,17 +1,36 @@
 <script setup>
 const props = defineProps({
   name: String,
-  proyect: Object
+  proyect: Object,
 });
+
+function handleClick() {
+  console.log("ss");
+
+  if (props.proyect.link_url !== "") {
+    console.log("in");
+    let url = `${props.proyect.link_url}`;
+    window.open(url, "_blank");
+  }
+}
 </script>
 
 <template>
-  <div class="card-mod">
+  <div class="card-mod" @click="handleClick">
     <div id="img_container">
-      <img :src="proyect.img_url" alt="">
+      <video
+        v-if="proyect.video_url !== ''"
+        width="100%"
+        height="100%"
+        muted
+        autoplay
+      >
+        <source :src="proyect.video_url" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <img v-else :src="proyect.img_url" alt="" />
     </div>
     <h3 class="name">{{ proyect.name }}</h3>
-    
   </div>
 </template>
 
@@ -25,6 +44,7 @@ const props = defineProps({
   justify-content: start;
   align-items: center;
   color: var(--color-fourth);
+  cursor: pointer;
 }
 
 #img_container {

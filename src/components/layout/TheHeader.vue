@@ -3,10 +3,10 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 function toggleMenu() {
-  const burger = document.querySelector(".burger")
-  const dropMenu = document.querySelector(".dropMenu")
-  burger.classList.toggle("open")
-  dropMenu.classList.toggle("show")
+  const burger = document.querySelector(".burger");
+  const dropMenu = document.querySelector(".dropMenu");
+  burger.classList.toggle("open");
+  dropMenu.classList.toggle("show");
 }
 </script>
 
@@ -41,6 +41,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
@@ -123,7 +126,6 @@ p {
 .burger.open span:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
-
 
 @media screen and (max-width: 600px) {
   .buttons {
