@@ -7,8 +7,8 @@
         <div class="about">
 <h1>Sobre mi</h1>
         <div id="foto"></div>
-        <p>Nací en barrancabermeja santander, desde pequeño siempre <br>me han apasionado las historias
-            y el poder escribir las mias.</br>
+        <p>"Nací en barrancabermeja santander, desde pequeño siempre <br>me han apasionado las historias
+            y el poder escribir las mias.</br><br>debido a eso me encanta la escritura, la Animación, la Ilustración y la utilizo</br><br> para traer a la vida a mis propios personajes e historias. desde los 8 me encantaba</br><br>dibujar comics y quize volver a esas raices, creo en que todos tus </br><br>sueños se pueden lograr si luchas por ellos.""</br>
         </p>
     </div>
     </section>

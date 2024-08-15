@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <section>
     <h1 class="section_name">{{ props.sectionName }}</h1>
-    <CardContainer :proyects="proyects"/>
+    <CardContainer :proyects="proyects" />
   </section>
 </template>
 
@@ -21,14 +21,15 @@ section {
 
 h1 {
   font-family: "Roboto", bold;
+  text-align: center;
   color: var(--color-primary);
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 900px) {
   h1 {
-    text-align: center;
     margin-left: 0;
   }
 }

@@ -7,8 +7,7 @@ const props = defineProps({
 <template>
   <section>
     <div class="card-container">
-      <TheCard  v-for="p in proyects" :proyect="p" :key="p.id" />
- 
+      <TheCard v-for="p in proyects" :proyect="p" :key="p.id" />
     </div>
   </section>
 </template>
@@ -20,9 +19,7 @@ const props = defineProps({
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   gap: 1em;
-
   margin-top: 80px;
   margin-bottom: 170px;
 }

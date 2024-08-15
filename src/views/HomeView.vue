@@ -24,7 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <section id="home">
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
     <WorkSection
       sectionName="Fotomontajes"
@@ -69,7 +69,7 @@ onMounted(() => {
       sectionName="Fotografía"
       :proyects="proyects.filter((e) => e.category_code == 'fot')"
     />
-    <ComicBox />
+    <ComicBox :images="['c9c1.png', 'c9c2.png', 'c9c3.png', 'c9c4.png']" />
     <About />
     <ComicBox />
     <Contact sectionName="Contacto" />
@@ -79,5 +79,9 @@ onMounted(() => {
 <style scoped>
 section {
   color: #000;
+}
+
+#home {
+  padding-top: 74px;
 }
 </style>
