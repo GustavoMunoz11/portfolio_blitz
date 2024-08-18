@@ -18,7 +18,9 @@
 <style scoped>
 section{
     background-color: var(--color-third);
-
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1{
@@ -29,11 +31,10 @@ bottom: 40px;
 }
 
 .about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     padding-top: 100px;
+  justify-content: center;
+  align-items: center;
   
 }
 

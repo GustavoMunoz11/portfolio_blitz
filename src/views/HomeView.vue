@@ -4,6 +4,7 @@ import WorkSection from "../components/works/WorkSection.vue";
 import ComicRow from "../components/comics/ComicRow.vue";
 import Contact from "../components/Contact.vue";
 import About from "../components/works/About.vue";
+import CoverBox from "../components/comics/CoverBox.vue";
 
 import { ref, onMounted } from "vue";
 
@@ -25,6 +26,7 @@ onMounted(() => {
 
 <template>
   <section id="home">
+    <CoverBox />
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
     <WorkSection
       sectionName="Fotomontajes"
