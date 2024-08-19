@@ -24,7 +24,6 @@ section {
 
 img {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -34,20 +33,27 @@ img {
 #cover {
   background-color: white;
   border: 3px solid black;
-  width: 90%;
-  height: 620px;
+  width: 1060px;
+  height: 632px;
 }
 
 @media screen and (max-width: 1300px) {
   #cover {
     height: 550px;
   }
+  img {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
   #cover {
-    width: 9%2;
+    width: 92%;
     height: 500px;
+  }
+
+  img {
+    padding-top: 0;
   }
 }
 

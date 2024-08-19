@@ -26,7 +26,7 @@ onMounted(() => {
 
 <template>
   <section id="home">
-    <CoverBox />
+    <CoverBox :images="['portada.png']" />
     <ComicBox :images="['c1c1.png', 'c1c2.png', 'c1c3.png', 'c1c4.png']" />
     <WorkSection
       sectionName="Fotomontajes"
