@@ -1,5 +1,6 @@
 <script setup>
 import { useRouter } from "vue-router";
+import { ref } from "vue";
 const router = useRouter();
 
 function toggleMenu() {
@@ -8,6 +9,33 @@ function toggleMenu() {
   burger.classList.toggle("open");
   dropMenu.classList.toggle("show");
 }
+
+const trabajos = ref([
+  "fotomontajes",
+  "ilustracion",
+  "web",
+  "animacion",
+  "editorial",
+  "doblaje",
+  "otros",
+  "fotografia",
+]);
+const currentTrabajo = ref(0);
+
+function scrollTo(section) {
+  if (section == "T") {
+    section = trabajos.value[currentTrabajo.value];
+    currentTrabajo.value++;
+
+    if (currentTrabajo.value == trabajos.value.length) {
+      currentTrabajo.value = 0;
+    }
+  }
+
+  document
+    .getElementById(section)
+    .scrollIntoView({ block: "start", behavior: "smooth" });
+}
 </script>
 
 <template>
@@ -15,9 +43,10 @@ function toggleMenu() {
     <h1>Gustavo Muñoz</h1>
 
     <div class="buttons">
-      <p @click="router.push({ name: 'trabajos' })">Trabajos</p>
-      <p @click="router.push({ name: 'sobre mi' })">Sobre Mi</p>
-      <p @click="router.push({ name: 'contacto' })">contacto</p>
+      <p @click="scrollTo('T')">Trabajos</p>
+
+      <p @click="scrollTo('sobre_mi')">Sobre Mi</p>
+      <p @click="scrollTo('contacto')">contacto</p>
     </div>
 
     <div class="burger" @click="toggleMenu">
@@ -27,9 +56,10 @@ function toggleMenu() {
     </div>
 
     <div class="dropMenu" @click="toggleMenu">
-      <p @click="router.push({ name: 'trabajos' })">Trabajos</p>
-      <p @click="router.push({ name: 'sobre mi' })">Sobre Mi</p>
-      <p @click="router.push({ name: 'contacto' })">contacto</p>
+      <p @click="scrollTo('fotomontajes')">Trabajos</p>
+
+      <p @click="scrollTo('sobre_mi')">Sobre Mi</p>
+      <p @click="scrollTo('contacto')">contacto</p>
     </div>
   </header>
 </template>
@@ -60,6 +90,10 @@ p {
 .buttons {
   display: flex;
   gap: 50px;
+}
+
+.buttons p {
+  cursor: pointer;
 }
 
 .dropMenu {

@@ -11,14 +11,14 @@ const props = defineProps({
       <div id="foto">
         <img :src="`img/${props.images ? props.images[0] : ''}`" alt="" />
       </div>
-      <p>
+      <div id="texto">
         "Nací en barrancabermeja santander, desde pequeño siempre me han
         apasionado las historias y el poder escribir las mias. debido a eso me
         encanta la escritura, la Animación, la Ilustración y la utilizo para
         traer a la vida a mis propios personajes e historias. desde los 8 me
         encantaba dibujar comics y quize volver a esas raices, creo en que todos
         tus sueños se pueden lograr si luchas por ellos."
-      </p>
+      </div>
     </div>
   </section>
 </template>
@@ -26,9 +26,6 @@ const props = defineProps({
 <style scoped>
 section {
   background-color: var(--color-third);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -48,6 +45,7 @@ h1 {
   width: 300px;
   height: 300px;
   background-color: gray;
+  left: 610px;
 }
 
 img {
@@ -59,13 +57,15 @@ img {
   border-radius: 100%;
 }
 
-p {
+#texto {
   padding-top: 50px;
   padding-bottom: 100px;
+  width: 600px;
+  height: 200px;
   font-family: "Roboto";
   font-size: 1rem;
   color: var(--color-fourth);
-  text-wrap: balance;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1300px) {
