@@ -1,0 +1,1 @@
+import{_ as c,o as e,c as t}from"./index-CvbCK2Li.js";const o={};function n(a,r){return e(),t("section",null," contact ")}const _=c(o,[["render",n],["__scopeId","data-v-da17f28c"]]);export{_ as default};

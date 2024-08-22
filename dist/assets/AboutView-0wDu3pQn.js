@@ -1,0 +1,1 @@
+import{_ as e,o as c,c as o}from"./index-CvbCK2Li.js";const t={};function a(n,r){return c(),o("section",null," about ")}const _=e(t,[["render",a],["__scopeId","data-v-4c54706a"]]);export{_ as default};
