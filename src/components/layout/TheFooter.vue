@@ -19,4 +19,22 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   padding: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  h3 {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    color: whitesmoke;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+  }
+}
 </style>

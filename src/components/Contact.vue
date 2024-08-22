@@ -77,7 +77,17 @@ button {
 
 @media screen and (max-width: 600px) {
   form {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+
+  input {
+    width: 80%;
+    height: 40px;
+  }
+
+  textarea {
+    width: 80%;
+    height: 300px;
   }
 }
 </style>

@@ -26,18 +26,24 @@ const props = defineProps({
 <style scoped>
 section {
   background-color: var(--color-third);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-family: "Roboto", bold;
   color: var(--color-primary);
   text-align: center;
-  bottom: 40px;
-  margin: 50px;
 }
 
 .about {
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.515);
+  width: 80%;
 }
 
 #foto {
@@ -45,7 +51,6 @@ h1 {
   width: 300px;
   height: 300px;
   background-color: gray;
-  left: 610px;
 }
 
 img {
@@ -60,7 +65,7 @@ img {
 #texto {
   padding-top: 50px;
   padding-bottom: 100px;
-  width: 600px;
+
   height: 200px;
   font-family: "Roboto";
   font-size: 1rem;
@@ -68,21 +73,17 @@ img {
   justify-content: center;
 }
 
-@media screen and (max-width: 1300px) {
-  #foto {
-    left: 400px;
-  }
-}
-
 @media screen and (max-width: 900px) {
   #foto {
-    left: 290px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #foto {
-    left: 150px;
+  #texto {
+    font-size: 0.75rem;
+    height: 70%;
   }
 }
 </style>
