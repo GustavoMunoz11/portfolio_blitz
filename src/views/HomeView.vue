@@ -51,12 +51,12 @@ onMounted(() => {
       sectionName="Animación 2D Y 3D"
       :proyects="proyects.filter((e) => e.category_code == 'ani')"
     />
-    <ComicBox />
+    <ComicBox :images="['c5c1.png', 'c5c2.png', 'c5c3.png', 'c5c4.png']" />
     <WorkSection
       sectionName="Editorial"
       :proyects="proyects.filter((e) => e.category_code == 'edi')"
     />
-    <ComicBox />
+    <ComicBox :images="['c6c1.png', 'c6c2.png', 'c6c3.png', 'c6c4.png']" />
     <WorkSection
       sectionName="Doblaje y Edición de sonido"
       :proyects="proyects.filter((e) => e.category_code == 'dob')"
@@ -72,8 +72,8 @@ onMounted(() => {
       :proyects="proyects.filter((e) => e.category_code == 'fot')"
     />
     <ComicBox :images="['c9c1.png', 'c9c2.png', 'c9c3.png', 'c9c4.png']" />
-    <About />
-    <ComicBox />
+    <About :images="['About.png']" />
+    <ComicBox :images="['c10c1.png', 'c10c2.png', 'c10c3.png', 'c10c4.png']" />
     <Contact sectionName="Contacto" />
   </section>
 </template>

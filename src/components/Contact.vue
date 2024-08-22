@@ -1,6 +1,6 @@
 <script setup>
 function handleSubmit(params) {
-  console.log("hola")
+  console.log("hola");
 }
 </script>
 
@@ -50,7 +50,6 @@ form {
   font-size: 1.2rem;
 }
 
-
 input {
   background-color: white;
   border-radius: 30px;
@@ -66,9 +65,19 @@ textarea {
   height: 300px;
 }
 
-
 button {
   background-color: var(--color-secondary);
 }
 
+@media screen and (max-width: 900px) {
+  form {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    font-size: 2rem;
+  }
+}
 </style>
